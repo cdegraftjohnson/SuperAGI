@@ -21,7 +21,7 @@
 
 <p align="center">
 <a href="https://github.com/cdegraftjohnson/SuperAGI/fork" target="blank">
-<img src="https://img.shields.io/github/forks/TransformerOptimus/SuperAGI?style=for-the-badge" alt="SuperAGI forks"/>
+<img src="https://img.shields.io/github/forks/cdegraftjohnson/SuperAGI?style=for-the-badge" alt="SuperAGI forks"/>
 </a>
 
 <a href="https://github.com/TransformerOptimus/SuperAGI/stargazers" target="blank">
