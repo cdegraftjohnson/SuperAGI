@@ -1,23 +1,23 @@
 #####################------------------SYSTEM KEYS-------------------------########################
-PINECONE_API_KEY: YOUR_PINECONE_API_KEY
-PINECONE_ENVIRONMENT: YOUR_PINECONE_ENVIRONMENT
+PINECONE_API_KEY: ba3e635b-8239-4f8b-b29f-ff4573067dcd
+PINECONE_ENVIRONMENT: eu-west4-gcp
 
-OPENAI_API_KEY: YOUR_OPEN_API_KEY
+OPENAI_API_KEY: esecret_d98qzuxgwd1puh4pp66ycbetlq
 PALM_API_KEY: YOUR_PALM_API_KEY
-REPLICATE_API_TOKEN: YOUR_REPLICATE_API_TOKEN
-HUGGING_API_TOKEN: YOUR_HUGGING_FACE_API_TOKEN
+REPLICATE_API_TOKEN: r8_0oTFZNz6ELqgHbYtE7Pf7jdBEdux4Gi0cYyxt
+HUGGING_API_TOKEN: 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
 
 # For locally hosted LLMs comment out the next line and uncomment the one after
 # to configure a local llm point your browser to 127.0.0.1:7860 and click on the model tab in text generation web ui.
-OPENAI_API_BASE: https://api.openai.com/v1
+OPENAI_API_BASE: https://api.endpoints.anyscale.com/v1
 #OPENAI_API_BASE: "http://super__tgwui:5001/v1"
 
 # "gpt-3.5-turbo-0301": 4032, "gpt-4-0314": 8092, "gpt-3.5-turbo": 4032, "gpt-4": 8092, "gpt-4-32k": 32768, "gpt-4-32k-0314": 32768, "llama":2048, "mpt-7b-storywriter":45000
-MODEL_NAME: "gpt-3.5-turbo-0301"
+MODEL_NAME: "openai/meta-llama/Llama-2-70b-chat-hf"
 # "gpt-3.5-turbo", , "gpt-4", "models/chat-bison-001"
-RESOURCES_SUMMARY_MODEL_NAME: "gpt-3.5-turbo"
-MAX_TOOL_TOKEN_LIMIT: 800
-MAX_MODEL_TOKEN_LIMIT: 4032 # set to 2048 for llama
+RESOURCES_SUMMARY_MODEL_NAME: "openai/meta-llama/Llama-2-70b-chat-hf"
+MAX_TOOL_TOKEN_LIMIT: 2048
+MAX_MODEL_TOKEN_LIMIT: 2048 # set to 2048 for llama
 
 #DATABASE INFO
 # redis details
@@ -63,7 +63,7 @@ ENCRYPTION_KEY: secret
 # If you are using docker or web hosted uncomment the next two lines and comment the third one
 # WEAVIATE_URL: YOUR_WEAVIATE_URL
 # WEAVIATE_API_KEY: YOUR_WEAVIATE_API_KEY
-WEAVIATE_USE_EMBEDDED: true
+WEAVIATE_USE_EMBEDDED: false
 
 
 #####################------------------TOOLS KEY-------------------------########################
@@ -72,7 +72,7 @@ GOOGLE_API_KEY: YOUR_GOOGLE_API_KEY
 SEARCH_ENGINE_ID: YOUR_SEARCH_ENIGNE_ID
 
 # IF YOU DONT HAVE GOOGLE SEARCH KEY, YOU CAN USE SERPER.DEV KEYS
-SERP_API_KEY: YOUR_SERPER_API_KEY
+SERP_API_KEY: fce2bc2fd468dc7dd37112610f2b0871b9437582
 
 #ENTER YOUR EMAIL CREDENTIALS TO ACCESS EMAIL TOOL
 EMAIL_ADDRESS: YOUR_EMAIL_ADDRESS
@@ -85,8 +85,8 @@ EMAIL_DRAFT_MODE_WITH_FOLDER: YOUR_DRAFTS_FOLDER
 EMAIL_ATTACHMENT_BASE_PATH: YOUR_DIRECTORY_FOR_EMAIL_ATTACHMENTS
 
 # GITHUB
-GITHUB_USERNAME: YOUR_GITHUB_USERNAME
-GITHUB_ACCESS_TOKEN: YOUR_GITHUB_ACCESS_TOKEN
+GITHUB_USERNAME: cdegraftjohnson
+GITHUB_ACCESS_TOKEN: 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
 
 #JIRA
 JIRA_INSTANCE_URL: YOUR_JIRA_INSTANCE_URL
@@ -97,7 +97,7 @@ JIRA_API_TOKEN: YOUR_JIRA_API_TOKEN
 SLACK_BOT_TOKEN: YOUR_SLACK_BOT_TOKEN
 
 # For running stable diffusion
-STABILITY_API_KEY: YOUR_STABILITY_API_KEY
+STABILITY_API_KEY: sk-6I4oiclTUScjCCY2HQkyVaofTug3l6mX2c9bTLaW8HuNwYIS
 #Engine IDs that can be used: 'stable-diffusion-v1', 'stable-diffusion-v1-5','stable-diffusion-512-v2-0', 'stable-diffusion-768-v2-0','stable-diffusion-512-v2-1','stable-diffusion-768-v2-1','stable-diffusion-xl-beta-v2-2-2'
 ENGINE_ID: "stable-diffusion-xl-beta-v2-2-2"
 
@@ -105,8 +105,8 @@ ENGINE_ID: "stable-diffusion-xl-beta-v2-2-2"
 ## based on the vector store you want to use
 
 ## RESOURCE_VECTOR_STORE can be REDIS, PINECONE, CHROMA, QDRANT
-#RESOURCE_VECTOR_STORE: YOUR_RESOURCE_VECTOR_STORE
-#RESOURCE_VECTOR_STORE_INDEX_NAME: YOUR_RESOURCE_VECTOR_STORE_INDEX_NAME
+RESOURCE_VECTOR_STORE: PINECONE
+RESOURCE_VECTOR_STORE_INDEX_NAME: langflow
 
 ## To use a custom redis
 #REDIS_VECTOR_STORE_URL: YOUR_REDIS_VECTOR_STORE_URL
