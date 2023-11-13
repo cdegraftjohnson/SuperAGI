@@ -2,22 +2,20 @@
 PINECONE_API_KEY: ba3e635b-8239-4f8b-b29f-ff4573067dcd
 PINECONE_ENVIRONMENT: eu-west4-gcp
 
-OPENAI_API_KEY: esecret_d98qzuxgwd1puh4pp66ycbetlq
+
 PALM_API_KEY: YOUR_PALM_API_KEY
 REPLICATE_API_TOKEN: r8_0oTFZNz6ELqgHbYtE7Pf7jdBEdux4Gi0cYyxt
 HUGGING_API_TOKEN: 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
 
 # For locally hosted LLMs comment out the next line and uncomment the one after
 # to configure a local llm point your browser to 127.0.0.1:7860 and click on the model tab in text generation web ui.
-OPENAI_API_BASE: https://api.endpoints.anyscale.com/v1
-#OPENAI_API_BASE: "http://super__tgwui:5001/v1"
 
-# "gpt-3.5-turbo-0301": 4032, "gpt-4-0314": 8092, "gpt-3.5-turbo": 4032, "gpt-4": 8092, "gpt-4-32k": 32768, "gpt-4-32k-0314": 32768, "llama":2048, "mpt-7b-storywriter":45000
-MODEL_NAME: "openai/meta-llama/Llama-2-70b-chat-hf"
-# "gpt-3.5-turbo", , "gpt-4", "models/chat-bison-001"
-RESOURCES_SUMMARY_MODEL_NAME: "openai/meta-llama/Llama-2-70b-chat-hf"
-MAX_TOOL_TOKEN_LIMIT: 2048
-MAX_MODEL_TOKEN_LIMIT: 2048 # set to 2048 for llama
+MODEL_NAME: "gpt-3.5-turbo-1106"
+OPENAI_API_KEY: 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
+OPENAI_API_BASE: https://api.openai.com/v1/chat/completions
+RESOURCES_SUMMARY_MODEL_NAME: "text-ada-001"
+MAX_TOOL_TOKEN_LIMIT: 8000
+MAX_MODEL_TOKEN_LIMIT: 8000
 
 #DATABASE INFO
 # redis details
